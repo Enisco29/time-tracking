@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="full-container">
+      <div class="user-container">
+        <div class="user">
+          <div class="img-container">
+            <img src="./images/image-jeremy.png" alt="" />
+          </div>
+          <div class="user-content">
+            <p class="report">Report for</p>
+            <p class="user-name">Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="action-display">
+          <p class="actions" data-timeframe="daily">Daily</p>
+          <p class="actions" data-timeframe="weekly">Weekly</p>
+          <p class="actions" data-timeframe="monthly">Monthly</p>
+        </div>
+      </div>
+
+      <div class="container work" id="card">
+        <img src="./images/icon-work.svg" alt="work" class="img-display" />
+        <div class="inner-container">
+          <div class="display">
+            <p class="actions-inner" id="work-title">Work</p>
+            <img src="./images/icon-ellipsis.svg" alt="..." class="dot" />
+          </div>
+          <div class="content">
+            <p class="hours" id="work-current"></p>
+            <p class="report">Last week - <span id="work-previous"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container play" id="card">
+        <img src="./images/icon-play.svg" alt="play" class="img-display" />
+        <div class="inner-container">
+          <div class="display">
+            <p class="actions-inner" id="play-title">Play</p>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="content">
+            <p class="hours" id="play-current"></p>
+            <p class="report">Last week - <span id="play-previous"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container study" id="card">
+        <img src="./images/icon-study.svg" alt="study" class="img-display" />
+        <div class="inner-container">
+          <div class="display">
+            <p class="actions-inner" id="study-title">Study</p>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="content">
+            <p class="hours" id="study-current"></p>
+            <p class="report">Last week - <span id="study-previous"></span> </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container exercise" id="card">
+        <img
+          src="./images/icon-exercise.svg"
+          alt="exercise"
+          class="img-display"
+        />
+        <div class="inner-container">
+          <div class="display">
+            <p class="actions-inner" id="exercise-title">Exercise</p>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="content">
+            <p class="hours" id="exercise-current"></p>
+            <p class="report">Last week - <span id="exercise-previous"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container social" id="card">
+        <img src="./images/icon-social.svg" alt="social" class="img-display" />
+        <div class="inner-container">
+          <div class="display">
+            <p class="actions-inner" id="social-title">Social</p>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="content">
+            <p class="hours" id="social-current"></p>
+            <p class="report">Last week - <span id="social-previous"></span> </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container self-care" id="card">
+        <img src="./images/icon-self-care.svg" alt="care" class="img-display" />
+        <div class="inner-container">
+          <div class="display">
+            <p class="actions-inner" id="self-care-title">Self-Care</p>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="content">
+            <p class="hours" id="self-care-current"></p>
+            <p class="report">Last week - <span id="self-care-previous"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
